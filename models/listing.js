@@ -4,13 +4,14 @@ const Schema = mongoose.Schema;
 
 const listingSchema =new Schema({
     title: {type:String,required:true},
-    description: {type:String},
+    description: {type:String,required:true},
     
     
     image: {
         filename: {
           type: String,
           default: "default",
+          
         },
         url: {
           type: String,
